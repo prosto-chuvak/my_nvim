@@ -10,20 +10,18 @@
 call plug#begin()                                                                                   
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'                                                                  
-Plug 'https://github.com/preservim/nerdtree'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'https://github.com/tpope/vim-surround'
-Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'https://github.com/rafi/awesome-vim-colorsc>
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'https://github.com/ryanoasis/vim-devicons'  
 Plug 'https://github.com/tc50cal/vim-terminal'
-Plug 'https://github.com/terryma/vim-multiple-cur>
+Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':>
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'windwp/nvim-autopairs'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -36,7 +34,7 @@ Plug 'hrsh7th/vim-vsnip'
 
 nmap <F8> :TagbarToggle<CR>
 
-source ~/.local/share/nvim/plugged/awesome-vim-co>
+source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/color/gruvbox.vim
 
 
 call plug#end()
@@ -121,9 +119,7 @@ require('lualine').setup()
   }
 EOF
 
-"nmap <C-o> :NERDTree<CR>"
 nmap <C-o> :Neotree<CR>
-"nmap <C-q> :NERDTreeToggle<CR>"
 nmap <C-q> :Neotree toggle<CR>
 
 nmap <C-k> :Commentary<CR>
