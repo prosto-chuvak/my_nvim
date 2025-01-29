@@ -8,11 +8,11 @@
 :set mouse=a
 
 call plug#begin()                            
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'nvim-tree/nvim-web-devicons'
-Plug 'nvim-neo-tree/neo-tree.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'MunifTanjim/nui.nvim'
+Plug 'https://github.com/nvim-lualine/lualine.nvim'
+Plug 'https://github.com/nvim-tree/nvim-web-devicons'
+Plug 'https://github.com/nvim-neo-tree/neo-tree.nvim'
+Plug 'https://github.com/nvim-lua/plenary.nvim'
+Plug 'https://github.com/MunifTanjim/nui.nvim'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/ap/vim-css-color'
@@ -21,31 +21,31 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'windwp/nvim-autopairs'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
+Plug 'https://github.com/nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/windwp/nvim-autopairs'
+Plug 'https://github.com/neovim/nvim-lspconfig'
+Plug 'https://github.com/hrsh7th/cmp-nvim-lsp'
+Plug 'https://github.com/hrsh7th/cmp-buffer'
+Plug 'https://github.com/hrsh7th/cmp-path'
+Plug 'https://github.com/hrsh7th/cmp-cmdline'
+Plug 'https://github.com/hrsh7th/nvim-cmp'
+Plug 'https://github.com/hrsh7th/cmp-vsnip'
+Plug 'https://github.com/hrsh7th/vim-vsnip'
 
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
 
-source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/color/gruvbox.vim
-
+colorscheme gruvbox
 
 call plug#end()
 
-nmap <C-o> :Neotree<CR>                      
-nmap <C-q> :Neotree toggle<CR>                                                            
+nmap <C-o> :NERDTree<CR>                      
+nmap <C-q> :NERDTreeToggle<CR>                                                            
 nmap <C-k> :Commentary<CR>                   
-nmap <C-s> :w<CR>                            
-nmap <C-x> :wq<CR>                            
+nmap <C-s> :w<CR> 
+imap <C-s> <Esc>:w<CR>                            
+nmap <C-x> :wq<CR> 
+imap <C-x> <Esc>:wq<CR>                           
 nmap <C-f> :q<CR>                             
-
 nmap <C-p> :PlugInstall<CR>
 
 lua <<EOF
