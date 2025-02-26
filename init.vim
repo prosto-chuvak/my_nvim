@@ -34,7 +34,7 @@ Plug 'https://github.com/hrsh7th/vim-vsnip'
 
 " nmap <F8> :TagbarToggle<CR>
 
-source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/color/gruvbox.vim
+source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/gruvbox.vim
 
 call plug#end()
 
