@@ -10,7 +10,7 @@
 call plug#begin()                            
 Plug 'https://github.com/nvim-lualine/lualine.nvim'
 Plug 'https://github.com/nvim-tree/nvim-web-devicons'
-Plug 'https://github.com/nvim-neo-tree/neo-tree.nvim'
+Plug 'preservim/nerdtree'
 Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/MunifTanjim/nui.nvim'
 Plug 'https://github.com/tpope/vim-surround'
@@ -31,8 +31,6 @@ Plug 'https://github.com/hrsh7th/cmp-cmdline'
 Plug 'https://github.com/hrsh7th/nvim-cmp'
 Plug 'https://github.com/hrsh7th/cmp-vsnip'
 Plug 'https://github.com/hrsh7th/vim-vsnip'
-
-" nmap <F8> :TagbarToggle<CR>
 
 source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/gruvbox.vim
 
