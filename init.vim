@@ -6,6 +6,7 @@
 :set softtabstop=3
 :set noswapfile                              
 :set mouse=a
+:set clipboard+=unnamedplus
 
 call plug#begin()                            
 Plug 'https://github.com/nvim-lualine/lualine.nvim'
@@ -45,6 +46,7 @@ nmap <C-x> :wq<CR>
 imap <C-x> <Esc>:wq<CR>                           
 nmap <C-f> :q<CR>                             
 nmap <C-p> :PlugInstall<CR>
+nmap <C-a> :terminal<CR> i
 
 lua <<EOF
 
